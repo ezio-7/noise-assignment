@@ -54,8 +54,3 @@ npm test.
 - **URL:** http://localhost:3000/sleep/1 (replace 1 with the actual recordId you want to delete)
 - **Response:** 204 No Content.
 
-### DELETE /sleep/:recordId:
-URL: http://localhost:3000/sleep/1621490443021 (replace 1621490443021 with the actual id from the POST response or GET response)
-Method: DELETE
-Response: You should receive a 204 No Content response if the deletion was successful.
-
