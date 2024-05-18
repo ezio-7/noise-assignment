@@ -54,43 +54,6 @@ npm test.
 - **URL:** http://localhost:3000/sleep/1 (replace 1 with the actual recordId you want to delete)
 - **Response:** 204 No Content.
 
-
-
-## Step-by-Step Guide for Postman:
-Start Your Server:
-Ensure your server is running by executing: npm start
-
-### POST /sleep:
-URL: http://localhost:3000/sleep
-Method: POST
-Headers: Content-Type: application/json
-Body:
-{
-  "userId": "user1",
-  "hours": 8,
-  "timestamp": "2024-05-18T07:00:00Z"
-}
-# Response: You will receive a response with an id field, which is the unique identifier for the created record. For example:
-{
-  "id": "1621490443021",
-  "userId": "user1",
-  "hours": 8,
-  "timestamp": "2024-05-18T07:00:00Z"
-}
-
-### GET /sleep/:userId:
-URL: http://localhost:3000/sleep/user1
-Method: GET
-Response: You will see a list of sleep records for the user. For example:
-[
-  {
-    "id": "1621490443021",
-    "userId": "user1",
-    "hours": 8,
-    "timestamp": "2024-05-18T07:00:00Z"
-  }
-]
-
 ### DELETE /sleep/:recordId:
 URL: http://localhost:3000/sleep/1621490443021 (replace 1621490443021 with the actual id from the POST response or GET response)
 Method: DELETE
