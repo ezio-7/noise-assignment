@@ -24,7 +24,7 @@ This is a simple RESTful API for tracking user sleep data, built with Node.js an
 ## Running Tests
 To run the tests, use:
 ```sh
-npm test.
+npm test
 ```
 
 ## API Endpoints
